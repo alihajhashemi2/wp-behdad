@@ -1,9 +1,9 @@
 :root {
     --color-primary: none;
-    --color-secondary: none;
-    --color-white: none;
-    --color-dark: none;
-    --color-light: none;
+    --color-secondary: rgb(27, 29, 31);
+    --color-white: rgb(255, 255, 255);
+    --color-dark: #141618;
+    --color-light: rgba(255, 255, 255, .5);
     --color-background: none;
 
     --card-border-radius: none;
@@ -13,7 +13,7 @@
     --card-padding: none;
     --padding-1: 1.5rem;
 
-    --transition-delay: 0.5s;
+    --transition-delay: 0.2s;
     --transition-type: ease-in-out;
 
     --box-shadow: 0 2rem 3rem var(var(--color-light))
@@ -28,7 +28,8 @@
 }
 
 body {
-    font-family: none;
+    font-family: "Yekan";
+    direction: rtl;
 }
 
 ul,
@@ -46,32 +47,36 @@ a {
     color: none;
 }
 
+.container {
+    margin: auto;
+}
+
 @media screen and (min-width: 576px) {
     .container {
-        max-width: 100%;
+        max-width: 95%;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 720px;
+        max-width: 90%;
     }
 }
 
 @media screen and (min-width: 992) {
     .container {
-        max-width: 910px;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1080px;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1400px) {
     .container {
-        max-width: 1200px;
+        max-width: 85%;
     }
 }
