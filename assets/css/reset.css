@@ -1,0 +1,77 @@
+:root {
+    --color-primary: none;
+    --color-secondary: none;
+    --color-white: none;
+    --color-dark: none;
+    --color-light: none;
+    --color-background: none;
+
+    --card-border-radius: none;
+    --border-radius-1: none;
+    --border-radius-2: none;
+
+    --card-padding: none;
+    --padding-1: 1.5rem;
+
+    --transition-delay: 0.5s;
+    --transition-type: ease-in-out;
+
+    --box-shadow: 0 2rem 3rem var(var(--color-light))
+}
+
+*::before,
+*,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+::selection {
+    background-color: none;
+    color: none;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992) {
+    .container {
+        max-width: 910px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1080px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
