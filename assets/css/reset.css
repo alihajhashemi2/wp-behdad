@@ -51,9 +51,15 @@ a {
     margin: auto;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 500px) {
     .container {
         max-width: 95%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 90%;
     }
 }
 

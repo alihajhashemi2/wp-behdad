@@ -15,22 +15,17 @@ Text Domain:
 */
 
 /* Top header section */
-@media screen and (max-width: 768px) {
-    .top-header {
-        display: none;
-    }
-}
-
 .top-header {
     width: 100%;
+    font-size: 0.8rem;
     background-color: var(--color-secondary);
 }
 
 .top-header .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .top-header .container .top-header-title {
@@ -56,7 +51,7 @@ Text Domain:
     color: var(--color-light);
 }
 
-.top-header .container .top-header-navigation ul li ul.top-header-dropdown {
+.top-header .container .top-header-navigation ul li ul.sub-menu {
     display: none;
     position: absolute;
     flex-direction: column;
@@ -68,11 +63,11 @@ Text Domain:
     background-color: var(--color-dark);
 }
 
-.top-header .container .top-header-navigation ul li ul.top-header-dropdown li:not(:last-child) {
+.top-header .container .top-header-navigation ul li ul.sub-menu li:not(:last-child) {
     margin-bottom: 0.5rem;
 }
 
-.top-header .container .top-header-navigation ul li:hover ul.top-header-dropdown {
+.top-header .container .top-header-navigation ul li:hover ul.sub-menu {
     display: block;
 }
 
