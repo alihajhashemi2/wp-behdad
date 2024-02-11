@@ -3,7 +3,7 @@
 get_header();
 
 // Top_Header
-get_template_part("/templates/main-header");
+get_template_part("/templates/wp-behdad-header");
 
 // Footer
 get_footer();

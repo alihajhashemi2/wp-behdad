@@ -44,11 +44,11 @@ Text Domain:
 
 .top-header .container .top-header-navigation ul li a {
     color: var(--color-white);
-    transition: var(--transition-type) var(--transition-delay);
+    transition: var(--transition);
 }
 
 .top-header .container .top-header-navigation ul li a:hover {
-    color: var(--color-light);
+    color: rgba(255, 255, 255, .5);
 }
 
 .top-header .container .top-header-navigation ul li ul.sub-menu {
@@ -72,3 +72,82 @@ Text Domain:
 }
 
 /* .End top header section */
+
+
+
+/* Header Navigation Section */
+.header-navigation {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--color-white);
+}
+
+.header-navigation .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation .container ul {
+    display: flex;
+}
+
+.header-navigation .container .header-navigation-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-navigation .container .header-navigation-logo a img {
+    width: 100%;
+    height: 2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-navigation .container .header-navigation-bar ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header-navigation .container .header-navigation-bar ul li a {
+    transition: var(--transition);
+}
+
+.header-navigation .container .header-navigation-bar ul li a:hover {
+    color: var(--color-light);
+}
+
+.header-navigation .container .header-navigation-icons ul li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.header-navigation .container .header-navigation-icons ul li a {
+    font-size: 1.1rem;
+}
+
+.header-navigation .container .header-navigation-icons ul li a:hover {
+    color: var(--color-light);
+}
+
+.header-navigation .container .header-navigation-navbar-menu {
+    display: none;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-icon a {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 990px) {
+    .header-navigation .container .header-navigation-bar {
+        display: none;
+    }
+
+    .header-navigation .container .header-navigation-navbar-menu {
+        display: block;
+    }
+}
+
+/* .End Header Navigation Section */
