@@ -20,7 +20,7 @@ function theme_setup()
     ));
 
     register_nav_menus(array(
-        'primary' => __("Primary Menu")
+        'header-navigation' => __("Header-Navigation")
     ));
 
     add_theme_support("custom-logo");

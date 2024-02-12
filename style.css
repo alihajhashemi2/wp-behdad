@@ -24,8 +24,7 @@ Text Domain:
 .top-header .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    align-items: center;
 }
 
 .top-header .container .top-header-title {
@@ -36,10 +35,12 @@ Text Domain:
     display: flex;
 }
 
-.top-header .container .top-header-navigation ul li {
+.top-header .container .top-header-navigation>ul>li {
     position: relative;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .top-header .container .top-header-navigation ul li a {
@@ -55,12 +56,14 @@ Text Domain:
     display: none;
     position: absolute;
     flex-direction: column;
-    right: -0.5rem;
+    right: 0;
+    top: 100%;
     padding-right: 0.5rem;
-    padding-left: 15rem;
+    padding-left: 8.25rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: var(--color-dark);
+    background-color: #000;
+    z-index: 1000000;
 }
 
 .top-header .container .top-header-navigation ul li ul.sub-menu li:not(:last-child) {
@@ -77,19 +80,19 @@ Text Domain:
 
 /* Header Navigation Section */
 .header-navigation {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* padding-top: 1.5rem;
+    padding-bottom: 1.5rem; */
     background-color: var(--color-white);
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: rgba(119, 119, 119, .15);
+    position: relative;
 }
 
 .header-navigation .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.header-navigation .container ul {
-    display: flex;
 }
 
 .header-navigation .container .header-navigation-logo a {
@@ -106,17 +109,79 @@ Text Domain:
     background-repeat: no-repeat;
 }
 
-.header-navigation .container .header-navigation-bar ul li {
+.header-navigation .container .header-navigation-bar ul {
+    display: flex;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .header-navigation .container .header-navigation-bar ul li a {
-    transition: var(--transition);
+    display: block;
 }
 
 .header-navigation .container .header-navigation-bar ul li a:hover {
     color: var(--color-light);
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 101%;
+    right: 0;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    background-color: #ffffff;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul {
+    visibility: hidden;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li:hover>ul {
+    visibility: visible;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>a {
+    pointer-events: none;
+    color: #303133;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li {
+    position: relative;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul {
+    display: flex;
+    padding-top: 2rem;
+    right: 0;
+    flex-direction: column;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li {
+    line-height: 2.5rem;
+    display: block;
+    width: 100%;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li>a {
+    color: rgba(48, 49, 51, .65);
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li>a:hover {
+    color: #303133;
+}
+
+.header-navigation .container .header-navigation-icons ul {
+    display: flex;
 }
 
 .header-navigation .container .header-navigation-icons ul li {

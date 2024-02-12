@@ -11,15 +11,15 @@
         </div>
         <!-- Navbar -->
         <div class="header-navigation-bar">
-            <ul>
-                <li><a href="">فروشگاه</a></li>
-                <li><a href="">محصولات</a></li>
-                <li><a href="">وبلاگ</a></li>
-                <li><a href="">باشگاه مشتریان</a></li>
-                <li><a href="">سوالات متداول</a></li>
-                <li><a href="">پشتیبانی</a></li>
-                <li><a href="">درباره ما</a></li>
-            </ul>
+            <?php
+            if (wp_nav_menu()) {
+                wp_nav_menu(array(
+                    'theme_location'  => 'header-navigation',
+                    'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                    'container'       => 'ul',
+                ));
+            }
+            ?>
         </div>
         <!-- Icons -->
         <div class="header-navigation-icons">
