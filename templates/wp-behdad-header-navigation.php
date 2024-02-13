@@ -39,3 +39,5 @@
     </div>
 </div>
 <!-- .End Header Navigation -->
+
+<?php get_template_part("/templates/wp-behdad-showcase"); ?>
