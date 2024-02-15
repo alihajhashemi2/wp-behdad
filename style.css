@@ -35,7 +35,7 @@ Text Domain:
     display: flex;
 }
 
-.top-header .container .top-header-navigation > ul > li {
+.top-header .container .top-header-navigation>ul>li {
     position: relative;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -66,13 +66,7 @@ Text Domain:
     z-index: 1000000;
 }
 
-.top-header
-    .container
-    .top-header-navigation
-    ul
-    li
-    ul.sub-menu
-    li:not(:last-child) {
+.top-header .container .top-header-navigation ul li ul.sub-menu li:not(:last-child) {
     margin-bottom: 0.5rem;
 }
 
@@ -91,10 +85,15 @@ Text Domain:
     position: relative;
 }
 
-.header-navigation .container {
+.header-navigation .container .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.header-navigation .container .header-navigation-logo {
+    display: flex;
 }
 
 .header-navigation .container .header-navigation-logo a {
@@ -113,18 +112,15 @@ Text Domain:
 
 .header-navigation .container .header-navigation-bar ul {
     display: flex;
+    justify-content: center;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 .header-navigation .container .header-navigation-bar ul li a {
@@ -135,23 +131,11 @@ Text Domain:
     color: var(--color-light);
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li:hover
-    > a {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li:hover>a {
     color: var(--color-light);
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -165,117 +149,46 @@ Text Domain:
     background-color: #ffffff;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul
-    > li {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li {
     padding-left: 5rem;
     padding-right: 5rem;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul {
     visibility: hidden;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li:hover
-    > ul {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li:hover>ul {
     visibility: visible;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul
-    > li
-    > a {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>a {
     pointer-events: none;
     color: #303133;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul
-    > li {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li {
     position: relative;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul
-    > li
-    > ul {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul {
     display: flex;
     padding-top: 1.5rem;
     right: 0;
     flex-direction: column;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul
-    > li
-    > ul
-    > li {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li {
     line-height: 2.5rem;
     display: block;
     width: 100%;
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul
-    > li
-    > ul
-    > li
-    > a {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li>a {
     color: rgba(48, 49, 51, 0.65);
 }
 
-.header-navigation
-    .container
-    .header-navigation-bar
-    > .menu-header-navigation-container
-    > ul
-    > li
-    > ul
-    > li
-    > ul
-    > li
-    > a:hover {
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li>a:hover {
     color: #303133;
 }
 
@@ -286,6 +199,7 @@ Text Domain:
 
 .header-navigation .container .header-navigation-icons ul {
     display: flex;
+    justify-content: end;
 }
 
 .header-navigation .container .header-navigation-icons ul li {
@@ -305,12 +219,43 @@ Text Domain:
     display: none;
 }
 
-.header-navigation
-    .container
-    .header-navigation-navbar-menu
-    .header-navigation-navbar-menu-icon
-    a {
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-icon a {
     font-size: 1.5rem;
+}
+
+/* Search Bar */
+.searchbar {
+    display: none;
+    background-color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.searchbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar .container .searchbar-form {
+    width: 95%;
+}
+
+.searchbar .container .searchbar-form form input {
+    outline: none;
+    border: 0px !important;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-family: 'Yekan';
+}
+
+.searchbar .container .searchbar-closer a {
+    font-size: 1.5rem;
+}
+
+.searchbar .container .searchbar-closer a:hover {
+    color: var(--color-light);
 }
 
 @media screen and (max-width: 990px) {
@@ -364,10 +309,24 @@ Text Domain:
     border-radius: 100px;
     border: 1px solid #ffffff;
     transition: var(--transition);
+    font-size: 0.9rem;
 }
 
 #showcase .container .showcase-button a:hover {
     color: #000;
     background-color: var(--color-white);
 }
+
+@media screen and (max-width: 990px) {
+    #showcase .container {
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #showcase .container .showcase-des {
+        max-width: none;
+    }
+}
+
 /* .End Showcase Section */
