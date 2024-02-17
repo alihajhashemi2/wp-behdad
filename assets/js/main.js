@@ -20,7 +20,7 @@ jQuery(function () {
         ).slideDown();
         jQuery(
             '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer '
-        ).show();
+        ).slideDown();
     });
     jQuery(
         '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer '
