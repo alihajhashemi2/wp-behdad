@@ -122,7 +122,7 @@ Text Domain:
     justify-content: center;
 }
 
-.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>.sub-menu {
+.header-navigation .container .header-navigation-bar .menu-header-navigation-container .sub-menu {
     z-index: 10;
 }
 
@@ -236,6 +236,7 @@ Text Domain:
 
 .header-navigation .container .header-navigation-navbar-menu {
     display: none;
+    z-index: 10;
 }
 
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-icon a {
