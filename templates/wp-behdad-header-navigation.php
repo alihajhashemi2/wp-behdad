@@ -31,7 +31,7 @@
                 <div class="header-navigation-icons">
                     <ul>
                         <li><a href="#" class="header-navigation-search-icon"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                        <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="<?php echo esc_url(wp_login_url(get_permalink())); ?>" alt="<?php esc_attr_e('Login', 'textdomain'); ?>"><i class="fa-regular fa-user"></i></a></li>
                         <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
                         <li><a href=""><i class="fa-regular fa-bag-shopping"></i></a></li>
                     </ul>
