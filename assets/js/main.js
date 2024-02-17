@@ -11,6 +11,7 @@ jQuery(function () {
     });
 
     // Header Navigation on Mobile
+    // Opening menu
     jQuery(
         '.header-navigation .container .header-navigation-navbar-menu>.header-navigation-navbar-menu-icon>a'
     ).on('click', function (e) {
@@ -22,6 +23,7 @@ jQuery(function () {
             '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer '
         ).slideDown();
     });
+    // Closing menu
     jQuery(
         '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer '
     ).on('click', function (e) {
@@ -31,8 +33,9 @@ jQuery(function () {
         ).slideUp();
         jQuery(
             '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer'
-        ).hide();
+        ).slideUp();
     });
+    // List Item Dropdown
     jQuery(
         '.header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>a'
     ).on('click', function () {
@@ -40,6 +43,7 @@ jQuery(function () {
             '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul'
         ).slideToggle();
     });
+    // // List Item Dropdown
     jQuery(
         '.header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>a'
     ).on('click', function () {
