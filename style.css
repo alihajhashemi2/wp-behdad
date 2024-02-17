@@ -89,10 +89,19 @@ Text Domain:
     position: relative;
 }
 
+.header-navigation .container {
+    display: flex;
+    justify-content: center;
+}
+
 .header-navigation .container .row {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.header-navigation .container .row .col-2 {
+    padding: 0;
 }
 
 .header-navigation .container .header-navigation-logo {
@@ -100,7 +109,6 @@ Text Domain:
     width: 100%;
     height: 100%;
     align-items: center;
-    justify-content: center;
 }
 
 .header-navigation .container .header-navigation-logo a {
