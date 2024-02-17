@@ -223,6 +223,70 @@ Text Domain:
     font-size: 1.5rem;
 }
 
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer a {
+    font-size: 1.5rem;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content .menu-header-navigation-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    background-color: #fff;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li {
+    line-height: 3rem;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>a {
+    font-size: 1.1rem;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul {
+    display: none;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul {
+    margin-right: 2rem;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>a {
+    font-size: 1.1rem;
+    color: rgba(48, 49, 51, 0.65);
+    transition: var(--transition);
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>a:hover {
+    color: #303133;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>ul {
+    display: none;
+    margin-right: 2rem;
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>ul>li>a {
+    font-size: 1.1rem;
+    color: rgba(48, 49, 51, 0.65);
+    transition: var(--transition);
+}
+
+.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>ul>li>a:hover {
+    color: #303133;
+}
+
 /* Search Bar */
 .searchbar {
     display: none;

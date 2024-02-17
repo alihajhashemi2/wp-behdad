@@ -42,9 +42,23 @@
 
 
         <!-- Navbar-Menu -->
-        <div class="header-navigation-navbar-menu">
+        <div class="header-navigation-navbar-menu active">
             <div class="header-navigation-navbar-menu-icon">
                 <a href=""><i class="fa-regular fa-bars"></i></a>
+            </div>
+            <div class="header-navigation-navbar-menu-content">
+                <?php
+                if (wp_nav_menu()) {
+                    wp_nav_menu(array(
+                        'theme_location'  => 'header-navigation',
+                        'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                        'container'       => 'ul',
+                    ));
+                }
+                ?>
+            </div>
+            <div class="header-navigation-navbar-menu-closer">
+                <a href=""><i class="fa-regular fa-xmark"></i></a>
             </div>
         </div>
     </div>
