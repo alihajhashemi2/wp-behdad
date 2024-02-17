@@ -70,16 +70,16 @@
         <!-- Search Form -->
         <div class="searchbar-form">
             <form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
-                <label>
-                    <span class="screen-reader-text"><?php echo _x('Search for:', 'label') ?></span>
-                    <input type="search" class="search-field" placeholder="<?php echo esc_attr_x('جستجو...', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
-                </label>
+                <!-- <label> -->
+                <span class="screen-reader-text"><?php echo _x('Search for:', 'label') ?></span>
+                <input type="text" class="search-field" placeholder="<?php echo esc_attr_x('جستجو...', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
+                <!-- </label> -->
                 <!-- <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button') ?>" /> -->
+                <!-- closer -->
+                <div class="searchbar-closer">
+                    <a href=""><i class="fa-regular fa-xmark"></i></a>
+                </div>
             </form>
-        </div>
-        <!-- closer -->
-        <div class="searchbar-closer">
-            <a href=""><i class="fa-regular fa-xmark"></i></a>
         </div>
     </div>
 </div>

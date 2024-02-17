@@ -302,7 +302,12 @@ Text Domain:
 }
 
 .searchbar .container .searchbar-form {
-    width: 95%;
+    width: 100%;
+}
+
+.searchbar .container .searchbar-form form {
+    display: flex;
+    align-items: center;
 }
 
 .searchbar .container .searchbar-form form input {
@@ -316,6 +321,7 @@ Text Domain:
 
 .searchbar .container .searchbar-closer a {
     font-size: 1.5rem;
+    padding: 1rem 2rem;
 }
 
 .searchbar .container .searchbar-closer a:hover {
