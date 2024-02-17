@@ -62,27 +62,29 @@
             </div>
         </div>
     </div>
-</div>
 
-<!-- Searchbar -->
-<div class="searchbar">
-    <div class="container">
-        <!-- Search Form -->
-        <div class="searchbar-form">
-            <form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
-                <!-- <label> -->
-                <span class="screen-reader-text"><?php echo _x('Search for:', 'label') ?></span>
-                <input type="text" class="search-field" placeholder="<?php echo esc_attr_x('جستجو...', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
-                <!-- </label> -->
-                <!-- <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button') ?>" /> -->
-                <!-- closer -->
-                <div class="searchbar-closer">
-                    <a href="" title="بستن نوار جستجو"><i class="fa-regular fa-xmark"></i></a>
-                </div>
-            </form>
+    <!-- Searchbar -->
+    <div class="searchbar">
+        <div class="container">
+            <!-- Search Form -->
+            <div class="searchbar-form">
+                <form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
+                    <!-- <label> -->
+                    <span class="screen-reader-text"><?php echo _x('Search for:', 'label') ?></span>
+                    <input type="text" class="search-field" placeholder="<?php echo esc_attr_x('جستجو...', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
+                    <!-- </label> -->
+                    <!-- <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button') ?>" /> -->
+                    <!-- closer -->
+                    <div class="searchbar-closer">
+                        <a href="" title="بستن نوار جستجو"><i class="fa-regular fa-xmark"></i></a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+
+
 <!-- .End Header Navigation -->
 
 <?php get_template_part("/templates/wp-behdad-showcase"); ?>

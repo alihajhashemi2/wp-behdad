@@ -310,9 +310,14 @@ Text Domain:
 /* Search Bar */
 .searchbar {
     display: none;
+    position: absolute;
+    width: 100%;
+    top: 101%;
+    right: 0;
     background-color: #ffffff;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 10;
 }
 
 .searchbar .container {
