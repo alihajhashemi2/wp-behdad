@@ -46,6 +46,7 @@ Text Domain:
 
 .top-header .container .top-header-navigation ul li a {
     color: var(--color-white);
+    transition: ease-in-out 0.1;
 }
 
 .top-header .container .top-header-navigation ul li a:hover {
@@ -136,6 +137,8 @@ Text Domain:
 
 .header-navigation .container .header-navigation-bar ul li a {
     display: block;
+    color: #000;
+    transition: ease-in-out 0.1s;
 }
 
 .header-navigation .container .header-navigation-bar ul li a:hover {
@@ -158,6 +161,12 @@ Text Domain:
     padding-left: 25rem;
     padding-right: 25rem;
     background-color: #ffffff;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li:hover>ul {
+    opacity: 1;
 }
 
 .header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li {
@@ -205,6 +214,7 @@ Text Domain:
 
 .header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li>a {
     color: rgba(48, 49, 51, 0.65);
+    transition: ease-in-out 0.1s;
 }
 
 .header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li>ul>li>a:hover {
@@ -228,6 +238,7 @@ Text Domain:
 
 .header-navigation .container .header-navigation-icons ul li a {
     font-size: 1.2rem;
+    transition: ease-in-out 0.1s;
 }
 
 .header-navigation .container .header-navigation-icons ul li a:hover {
@@ -285,7 +296,7 @@ Text Domain:
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>a {
     font-size: 1.25rem;
     color: rgba(48, 49, 51, 0.65);
-    transition: var(--transition);
+    transition: ease-in-out 0.1s;
 }
 
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>a:hover {
@@ -300,7 +311,7 @@ Text Domain:
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>ul>li>a {
     font-size: 1.25rem;
     color: rgba(48, 49, 51, 0.65);
-    transition: var(--transition);
+    transition: ease-in-out 0.1s;
 }
 
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>ul>li>a:hover {
@@ -347,6 +358,7 @@ Text Domain:
 .searchbar .container .searchbar-closer a {
     font-size: 1.5rem;
     padding: 1rem 2rem;
+    transition: ease-in-out 0.1s;
 }
 
 .searchbar .container .searchbar-closer a:hover {
@@ -414,7 +426,7 @@ Text Domain:
     padding: 1rem 2rem;
     border-radius: 100px;
     border: 1px solid #ffffff;
-    transition: var(--transition);
+    transition: ease-in-out 0.1s;
     font-size: 0.9rem;
 }
 
