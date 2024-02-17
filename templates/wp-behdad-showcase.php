@@ -1,5 +1,5 @@
 <!-- Showcase -->
-<div id="showcase">
+<div id="showcase" style="background-image: url(<?php echo get_template_directory_uri() . "/assets/img/fabio-alves-HNaC2lbnK_0-unsplash.jpg"; ?>);">
     <div class="container">
         <div class="showcase-content">
             <!-- Title -->

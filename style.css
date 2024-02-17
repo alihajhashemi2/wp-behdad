@@ -25,6 +25,7 @@ Text Domain:
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .top-header .container .top-header-title {
@@ -33,10 +34,10 @@ Text Domain:
 
 .top-header .container .top-header-navigation ul {
     display: flex;
+    position: relative;
 }
 
 .top-header .container .top-header-navigation>ul>li {
-    position: relative;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
@@ -45,7 +46,6 @@ Text Domain:
 
 .top-header .container .top-header-navigation ul li a {
     color: var(--color-white);
-    transition: var(--transition);
 }
 
 .top-header .container .top-header-navigation ul li a:hover {
@@ -56,10 +56,10 @@ Text Domain:
     display: none;
     position: absolute;
     flex-direction: column;
-    right: 0;
+    left: -85%;
     top: 100%;
-    padding-right: 0.5rem;
-    padding-left: 8.25rem;
+    width: 100%;
+    padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #000;
@@ -79,6 +79,9 @@ Text Domain:
 /* Header Navigation Section */
 .header-navigation {
     background-color: var(--color-white);
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
     border-bottom: 1px;
     border-style: solid;
     border-color: rgba(119, 119, 119, 0.15);
@@ -86,7 +89,6 @@ Text Domain:
 }
 
 .header-navigation .container .row {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -94,12 +96,17 @@ Text Domain:
 
 .header-navigation .container .header-navigation-logo {
     display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-navigation .container .header-navigation-logo a {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
+
 }
 
 .header-navigation .container .header-navigation-logo a img {
@@ -115,11 +122,15 @@ Text Domain:
     justify-content: center;
 }
 
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>.sub-menu {
+    z-index: 10;
+}
+
 .header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li {
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     cursor: pointer;
 }
 
@@ -152,6 +163,14 @@ Text Domain:
 .header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li {
     padding-left: 5rem;
     padding-right: 5rem;
+    transition: 1s;
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li:hover>ul>li {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul {
@@ -193,8 +212,8 @@ Text Domain:
 }
 
 .header-navigation .container .header-navigation-icons {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
 }
 
 .header-navigation .container .header-navigation-icons ul {
@@ -208,7 +227,7 @@ Text Domain:
 }
 
 .header-navigation .container .header-navigation-icons ul li a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .header-navigation .container .header-navigation-icons ul li a:hover {
@@ -251,7 +270,7 @@ Text Domain:
 }
 
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>a {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul {
@@ -263,7 +282,7 @@ Text Domain:
 }
 
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>a {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     color: rgba(48, 49, 51, 0.65);
     transition: var(--transition);
 }
@@ -278,7 +297,7 @@ Text Domain:
 }
 
 .header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>ul>li>a {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     color: rgba(48, 49, 51, 0.65);
     transition: var(--transition);
 }
@@ -335,13 +354,20 @@ Text Domain:
         justify-content: unset;
     }
 
+    .header-navigation .container .row .col-2 {
+        padding: 0;
+    }
+
     .header-navigation .container .header-navigation-bar {
         display: none;
     }
 
     .header-navigation .container .header-navigation-icons {
+        margin-left: 2rem;
+    }
+
+    .header-navigation .container .header-navigation-navbar-menu {
         margin-right: auto;
-        margin-left: 1.5rem;
     }
 
     .header-navigation .container .header-navigation-navbar-menu {
@@ -353,9 +379,14 @@ Text Domain:
 
 /* Showcase Section */
 #showcase {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    background-color: #333;
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 #showcase .container .showcase-title {

@@ -30,10 +30,10 @@
             <div class="col-2">
                 <div class="header-navigation-icons">
                     <ul>
-                        <li><a href="#" class="header-navigation-search-icon"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                        <li><a href="<?php echo esc_url(wp_login_url(get_permalink())); ?>" alt="<?php esc_attr_e('Login', 'textdomain'); ?>"><i class="fa-regular fa-user"></i></a></li>
-                        <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                        <li><a href=""><i class="fa-regular fa-bag-shopping"></i></a></li>
+                        <li><a href="#" class="header-navigation-search-icon" title="جستجو"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                        <li><a href="<?php echo esc_url(wp_login_url(get_permalink())); ?>" alt="<?php esc_attr_e('Login', 'textdomain'); ?>" title="حساب کاربری"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="" title="پسندیده ها"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="" title="سبد خرید"><i class="fa-regular fa-bag-shopping"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,7 @@
 
 
         <!-- Navbar-Menu -->
-        <div class="header-navigation-navbar-menu active">
+        <div class="header-navigation-navbar-menu">
             <div class="header-navigation-navbar-menu-icon">
                 <a href=""><i class="fa-regular fa-bars"></i></a>
             </div>
@@ -77,7 +77,7 @@
                 <!-- <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button') ?>" /> -->
                 <!-- closer -->
                 <div class="searchbar-closer">
-                    <a href=""><i class="fa-regular fa-xmark"></i></a>
+                    <a href="" title="بستن نوار جستجو"><i class="fa-regular fa-xmark"></i></a>
                 </div>
             </form>
         </div>
