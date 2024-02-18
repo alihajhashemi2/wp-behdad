@@ -56,9 +56,9 @@
                     ));
                 }
                 ?>
-            </div>
-            <div class="header-navigation-navbar-menu-closer">
-                <a href=""><i class="fa-regular fa-xmark"></i></a>
+                <div class="header-navigation-navbar-menu-closer">
+                    <a href=""><i class="fa-regular fa-xmark"></i></a>
+                </div>
             </div>
         </div>
     </div>
