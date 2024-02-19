@@ -6,7 +6,7 @@
             <!-- Slider Closer -->
             <div class="slider-closer">
                 <a href="">
-                    <i class="fa-regular fa-x"></i>
+                    <i class="fa-light fa-x"></i>
                 </a>
             </div>
             <!-- Slider Navigation -->

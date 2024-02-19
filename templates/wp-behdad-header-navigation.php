@@ -30,12 +30,12 @@
             <div class="col-2">
                 <div class="header-navigation-icons">
                     <ul>
-                        <li><a href="#" class="header-navigation-search-icon" title="جستجو"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                        <li><a href="<?php echo esc_url(wp_login_url(get_permalink())); ?>" alt="<?php esc_attr_e('Login', 'textdomain'); ?>" title="حساب کاربری"><i class="fa-regular fa-user"></i></a></li>
-                        <li><a href="" title="پسندیده ها"><i class="fa-regular fa-heart"></i></a></li>
-                        <li><a href="" title="سبد خرید"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                        <li><a href="#" class="header-navigation-search-icon" title="جستجو"><i class="fa-light fa-magnifying-glass"></i></a></li>
+                        <li><a href="<?php echo esc_url(wp_login_url(get_permalink())); ?>" alt="<?php esc_attr_e('Login', 'textdomain'); ?>" title="حساب کاربری"><i class="fa-light fa-user"></i></a></li>
+                        <li><a href="" title="پسندیده ها"><i class="fa-light fa-heart"></i></li>
+                        <li><a href="" title="سبد خرید"><i class="fa-light fa-bag-shopping"></i></a></li>
                         <li class="header-navigation-navbar-icon">
-                            <a href=""><i class="fa-regular fa-bars"></i></a>
+                            <a href=""><i class="fa-light fa-bars"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
                     <!-- <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button') ?>" /> -->
                     <!-- closer -->
                     <div class="searchbar-closer">
-                        <a href="" title="بستن نوار جستجو"><i class="fa-regular fa-xmark"></i></a>
+                        <a href="" title="بستن نوار جستجو"><i class="fa-light fa-x"></i></a>
                     </div>
                 </form>
             </div>
