@@ -356,7 +356,7 @@ Text Domain:
     top: 0;
     left: 0;
     width: 95%;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     padding-top: 5rem;
     transform: translateX(-100%);
@@ -489,7 +489,6 @@ Text Domain:
     top: 100%;
     right: 0;
     padding-bottom: 2rem;
-    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 990px) {
