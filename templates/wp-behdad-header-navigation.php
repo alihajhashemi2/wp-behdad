@@ -34,35 +34,14 @@
                         <li><a href="<?php echo esc_url(wp_login_url(get_permalink())); ?>" alt="<?php esc_attr_e('Login', 'textdomain'); ?>" title="حساب کاربری"><i class="fa-regular fa-user"></i></a></li>
                         <li><a href="" title="پسندیده ها"><i class="fa-regular fa-heart"></i></a></li>
                         <li><a href="" title="سبد خرید"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                        <li class="header-navigation-navbar-icon">
+                            <a href=""><i class="fa-regular fa-bars"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-
-
-
-        <!-- Navbar-Menu -->
-        <div class="header-navigation-navbar-menu">
-            <div class="header-navigation-navbar-menu-icon">
-                <a href=""><i class="fa-regular fa-bars"></i></a>
-            </div>
-            <div class="header-navigation-navbar-menu-content">
-                <?php
-                if (wp_nav_menu()) {
-                    wp_nav_menu(array(
-                        'theme_location'  => 'header-navigation',
-                        'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
-                        'container'       => 'ul',
-                    ));
-                }
-                ?>
-                <div class="header-navigation-navbar-menu-closer">
-                    <a href=""><i class="fa-regular fa-xmark"></i></a>
-                </div>
-            </div>
-        </div>
     </div>
-
     <!-- Searchbar -->
     <div class="searchbar">
         <div class="container">
@@ -86,5 +65,3 @@
 
 
 <!-- .End Header Navigation -->
-
-<?php get_template_part("/templates/wp-behdad-showcase"); ?>

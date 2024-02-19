@@ -1,6 +1,5 @@
+// Searchbar Section Scripts
 jQuery(function () {
-    console.log('fsadjfklasdflj');
-    // Header Navigation Searchbar
     jQuery('.header-navigation-search-icon').on('click', function (e) {
         e.preventDefault();
         jQuery('.searchbar').slideToggle();
@@ -9,46 +8,29 @@ jQuery(function () {
         e.preventDefault();
         jQuery('.searchbar').slideUp();
     });
+});
 
-    // Header Navigation on Mobile
-    // Opening menu
+// Slider Section Scripts
+jQuery(function () {
+    // Opening Silder
     jQuery(
-        '.header-navigation .container .header-navigation-navbar-menu>.header-navigation-navbar-menu-icon>a'
+        '.header-navigation .container .row .header-navigation-icons ul .header-navigation-navbar-icon'
     ).on('click', function (e) {
         e.preventDefault();
-        jQuery(
-            '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content .menu-header-navigation-container'
-        ).slideDown();
-        jQuery(
-            '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer '
-        ).slideDown();
+        jQuery('#slider').addClass('slider-active');
     });
-    // Closing menu
+    // Closing Slider
+    jQuery('#slider .container .slider-content .slider-closer').on(
+        'click',
+        function (e) {
+            e.preventDefault();
+            jQuery('#slider').removeClass('slider-active');
+        }
+    );
+    // Dropdown Settings
     jQuery(
-        '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer '
-    ).on('click', function (e) {
-        e.preventDefault();
-        jQuery(
-            '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content .menu-header-navigation-container'
-        ).slideUp();
-        jQuery(
-            '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-closer'
-        ).slideUp();
-    });
-    // List Item Dropdown
-    jQuery(
-        '.header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>a'
+        '#slider .container .slider-content .slider-navigation .menu-header-navigation-container ul li a'
     ).on('click', function () {
-        jQuery(
-            '.header-navigation .container .header-navigation-navbar-menu .header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul'
-        ).slideToggle();
-    });
-    // // List Item Dropdown
-    jQuery(
-        '.header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>a'
-    ).on('click', function () {
-        jQuery(
-            '.header-navigation-navbar-menu-content>.menu-header-navigation-container>ul>li>ul>li>ul'
-        ).slideToggle();
+        jQuery(this).siblings('.sub-menu').slideToggle('fast');
     });
 });
