@@ -339,6 +339,7 @@ Text Domain:
 
     .header-navigation .container .header-navigation-icons ul li.header-navigation-navbar-icon {
         display: block;
+        margin-right: 0.5rem;
     }
 }
 
