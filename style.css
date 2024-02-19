@@ -191,7 +191,7 @@ Text Domain:
 .header-navigation .container .header-navigation-bar>.menu-header-navigation-container>ul>li>ul>li {
     padding-left: 5rem;
     padding-right: 5rem;
-    transition: 1s;
+    transition: 0.2s;
     transform: translateY(10px);
     opacity: 0;
 }
