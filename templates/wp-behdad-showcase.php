@@ -1,18 +1,20 @@
 <!-- Showcase -->
-<div id="showcase" style="background-image: url(<?php echo get_template_directory_uri() . "/assets/img/fabio-alves-HNaC2lbnK_0-unsplash.jpg"; ?>);">
+<?php $id = get_option("my_option_name"); ?>
+<?php $id_key = $id["id_number"]; ?>
+<div id="showcase" style="background-image: url(<?php echo get_the_post_thumbnail_url($id_key); ?>);">
     <div class="container">
         <div class="showcase-content">
             <!-- Title -->
             <div class="showcase-title">
-                کلکسیون کول پشتی
+                <?php echo get_the_title($id_key); ?>
             </div>
             <!-- Description -->
             <div class="showcase-des">
-                پیشنهادات و تخفیفات ویژه ای که حتمی باید از آن ها ببینید چون ممگنه دیگه تکرار نشوند!!!!
+                <?php echo get_post_field("post_content", $id_key); ?>
             </div>
             <!-- Button -->
             <div class="showcase-button">
-                <a href="">پیشنهادات ویژه</a>
+                <a href="<?php echo get_permalink($id_key) ?>">جزئیات بیشتر</a>
             </div>
         </div>
     </div>

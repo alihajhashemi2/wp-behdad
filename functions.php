@@ -1,5 +1,8 @@
 <?php
 
+require get_theme_file_path("/include/settings-option.php");
+
+
 // Import Resources
 function import_recourse()
 {
