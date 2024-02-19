@@ -352,7 +352,7 @@ Text Domain:
 
 #slider {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 95%;
@@ -361,27 +361,36 @@ Text Domain:
     padding-top: 5rem;
     transform: translateX(-100%);
     transition: 0.5s ease-in-out;
+    overflow-y: scroll;
 }
 
 #slider .container .slider-content {
-    display: flex;
     position: relative;
 }
 
 #slider .container .slider-content .slider-closer {
     margin-right: auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1.5rem;
+    left: 1.5rem;
+    z-index: 10;
 }
 
 #slider .container .slider-content .slider-navigation {
-    padding-top: 3rem;
+    margin-top: 3rem;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.097);
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 #slider .container .slider-content .slider-navigation .menu-header-navigation-container>ul>li>a {
+    display: block;
     font-size: 1.5rem;
+    padding: 0.5rem;
     transition: 0.1s ease-in-out;
+    color: #303133;
 }
 
 #slider .container .slider-content .slider-navigation .menu-header-navigation-container>ul>li>a:hover {
@@ -394,8 +403,11 @@ Text Domain:
 }
 
 #slider .container .slider-content .slider-navigation .menu-header-navigation-container>ul>li>ul>li>a {
+    display: block;
     font-size: 1.2rem;
+    padding: 0.5rem;
     transition: 0.1s ease-in-out;
+    color: #303133;
 }
 
 #slider .container .slider-content .slider-navigation .menu-header-navigation-container>ul>li>ul>li>a:hover {
@@ -404,16 +416,80 @@ Text Domain:
 
 #slider .container .slider-content .slider-navigation .menu-header-navigation-container>ul>li>ul>li>ul {
     display: none;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 #slider .container .slider-content .slider-navigation .menu-header-navigation-container>ul>li>ul>li>ul>li>a {
+    display: block;
     font-size: 1.2rem;
+    padding: 0.5rem;
     transition: 0.1s ease-in-out;
+    color: #303133;
 }
 
 #slider .container .slider-content .slider-navigation .menu-header-navigation-container>ul>li>ul>li>ul>li>a:hover {
     color: rgba(48, 49, 51, 0.65);
+}
+
+#slider .container .slider-content .slider-sub {
+    top: 100%;
+    right: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.097);
+}
+
+#slider .container .slider-content .slider-sub .slider-sub-title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #303133;
+}
+
+#slider .container .slider-content .slider-sub .slider-sub-des a {
+    font-size: 1rem;
+    transition: ease-in-out 0.1s;
+    color: #303133;
+}
+
+#slider .container .slider-content .slider-sub .slider-sub-des a:hover {
+    color: rgba(48, 49, 51, 0.65);
+}
+
+#slider .container .slider-content .slider-sub .slider-sub-des a i {
+    align-items: center;
+    font-size: 0.8rem;
+    margin-right: 0.25rem;
+}
+
+#slider .container .slider-content .slider-help {
+    top: 100%;
+    right: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.097);
+}
+
+#slider .container .slider-content .slider-help .slider-help-title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#slider .container .slider-content .slider-help ul li a {
+    display: block;
+    padding: 0.25rem;
+    color: #303133;
+    transition: ease-in-out 0.1s;
+}
+
+#slider .container .slider-content .slider-help ul li a:hover {
+    color: rgba(48, 49, 51, 0.65);
+}
+
+#slider .container .slider-content .slider-footer {
+    top: 100%;
+    right: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 990px) {

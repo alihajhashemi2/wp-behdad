@@ -36,6 +36,10 @@ function theme_setup()
         'header-navigation' => __("Header-Navigation")
     ));
 
+    register_nav_menus(array(
+        'slider-help' => __("slider-help")
+    ));
+
     add_theme_support("custom-logo");
 }
 
