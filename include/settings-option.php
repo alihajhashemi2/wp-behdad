@@ -78,13 +78,13 @@ class MySettingsPage
             'setting_section_id' // Section           
         );
 
-        // add_settings_field(
-        //     'title',
-        //     'عنوان',
-        //     array($this, 'title_callback'),
-        //     'my-setting-admin',
-        //     'setting_section_id'
-        // );
+        add_settings_field(
+            'title',
+            'عنوان کلید',
+            array($this, 'title_callback'),
+            'my-setting-admin',
+            'setting_section_id'
+        );
     }
 
     /**
@@ -126,13 +126,13 @@ class MySettingsPage
     /** 
      * Get the settings option array and print one of its values
      */
-    // public function title_callback()
-    // {
-    //     printf(
-    //         '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
-    //         isset($this->options['title']) ? esc_attr($this->options['title']) : ''
-    //     );
-    // }
+    public function title_callback()
+    {
+        printf(
+            '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
+            isset($this->options['title']) ? esc_attr($this->options['title']) : ''
+        );
+    }
 }
 
 if (is_admin())

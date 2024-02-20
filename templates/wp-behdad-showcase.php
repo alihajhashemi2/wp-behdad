@@ -1,6 +1,10 @@
 <!-- Showcase -->
-<?php $id = get_option("my_option_name"); ?>
-<?php $id_key = $id["id_number"]; ?>
+<?php
+$id = get_option("my_option_name");
+$id_key = $id["id_number"];
+$title = get_option("my_option_name");
+$title_key = $title["title"];
+?>
 <div id="showcase" style="background-image: url(<?php echo get_the_post_thumbnail_url($id_key); ?>);">
     <div class="container">
         <div class="showcase-content">
@@ -14,7 +18,7 @@
             </div>
             <!-- Button -->
             <div class="showcase-button">
-                <a href="<?php echo get_permalink($id_key) ?>">جزئیات بیشتر</a>
+                <a href="<?php echo get_permalink($id_key) ?>"><?php echo $title_key; ?></a>
             </div>
         </div>
     </div>
