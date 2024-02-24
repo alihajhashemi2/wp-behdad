@@ -11,3 +11,13 @@
 </head>
 
 <body>
+
+    <?php
+    // Main Header
+    get_template_part("/templates/wp-behdad-header");
+
+    // Show Case
+    get_template_part("/templates/wp-behdad-showcase");
+
+    // Slider
+    get_template_part("/templates/wp-behdad-slider");
