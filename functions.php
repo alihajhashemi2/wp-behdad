@@ -9,7 +9,7 @@ function import_recourse()
     // Yekan Font
     wp_enqueue_style('Yekan Font', get_template_directory_uri() . '/assets/fonts/Yekan-Font-3.0/Yekan.css', array(), '1.1', 'all');
     // Fontawesome
-    wp_enqueue_style('Fontawesome', get_template_directory_uri() . 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css', array(), '1.1', 'all');
+    wp_enqueue_style('Fontawesome', get_template_directory_uri() . '/assets/fonts/fontawesome-pro/css/all.min.css', array(), '1.1', 'all');
     // Bootstrap
     wp_enqueue_style('Bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css', array(), '1.1', 'all');
     // Reset Style

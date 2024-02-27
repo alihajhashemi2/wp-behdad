@@ -555,6 +555,37 @@ Text Domain:
 
 /* .End Showcase Section */
 
+/* Store Section */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce-loop-product__title {
+    margin-top: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.woocommerce-loop-product__title:hover {
+    color: #e82a2a;
+}
+
+.product .price {
+    pointer-events: none;
+}
+
+.product .price ins {
+    text-decoration: none;
+}
+
+/* .End Store Section */
+
 /* Footer Section */
 #footer {
     color: #fff;
@@ -590,7 +621,6 @@ Text Domain:
     background-color: transparent;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
-    max-width: 75%;
 }
 
 .footer-newsletter-form:focus-within {
@@ -599,7 +629,6 @@ Text Domain:
 
 .footer-newsletter-form input[type="email"] {
     padding: 0.5rem 1rem;
-    padding-left: 3rem;
     font-size: 1rem;
     border: none;
     background-color: transparent;
@@ -646,12 +675,27 @@ Text Domain:
 
 .footer-navigation .menu-header-navigation-container ul li a {
     color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-navigation .menu-header-navigation-container ul li a:hover {
+    color: #e82a2a;
 }
 
 .footer-copyright {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: 1px solid #303133;
+}
+
+@media screen and (max-width: 570px) {
+    .footer-content .container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        max-width: none;
+    }
+
 }
 
 /* .End Footer Section */
