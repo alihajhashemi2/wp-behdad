@@ -572,21 +572,44 @@ Text Domain:
 
 .footer-newsletter-title {
     font-size: 1.2rem;
+    max-width: 75%;
 }
 
 .footer-newsletter-des {
     margin-top: 2rem;
+    max-width: 75%;
 }
 
 .footer-newsletter-form {
+    display: flex;
+    align-items: center;
+    width: fit-content;
     margin-top: 2rem;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, .25);
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    max-width: 75%;
+}
+
+.footer-newsletter-form:focus-within {
+    border-color: #e82a2a;
 }
 
 .footer-newsletter-form input[type="email"] {
     padding: 0.5rem 1rem;
+    padding-left: 3rem;
     font-size: 1rem;
-    border: 1px solid rgba(255, 255, 255, .25);
+    border: none;
     background-color: transparent;
+    max-width: 75%;
+    color: #fff;
+}
+
+.footer-newsletter-form input[type="email"]:focus {
+    outline: none;
+    border: none;
 }
 
 .footer-newsletter-form input[type="submit"] {
@@ -598,6 +621,7 @@ Text Domain:
     outline: none;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    max-width: 75%;
 }
 
 .footer-newsletter-form input[type="submit"]:hover {

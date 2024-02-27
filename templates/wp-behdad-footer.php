@@ -14,7 +14,7 @@
                 <!-- Newsletter Form -->
                 <form action="" class="footer-newsletter-form">
                     <input type="email" placeholder="ایمیل شما">
-                    <input type="submit" value="عضویت">
+                    <input type="submit" value="عضویت در خبرنامه">
                 </form>
             </div>
             <!-- Navigation -->
