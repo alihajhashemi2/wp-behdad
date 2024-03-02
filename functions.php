@@ -45,6 +45,8 @@ function theme_setup()
 
     add_theme_support("custom-logo");
 
+    add_theme_support("side-bar");
+
     add_theme_support("woocommerce");
 }
 
