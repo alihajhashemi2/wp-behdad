@@ -118,7 +118,7 @@ class MySettingsPage
     public function id_number_callback()
     {
         printf(
-            '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
+            '<input type="text" id="id_number" name="my_option_name[id_number]" value="" />',
             isset($this->options['id_number']) ? esc_attr($this->options['id_number']) : ''
         );
     }
