@@ -591,6 +591,13 @@ Text Domain:
     flex-direction: column;
 }
 
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
 .onsale {
     display: none !important;
 }

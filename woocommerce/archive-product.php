@@ -57,6 +57,23 @@ do_action('woocommerce_before_main_content');
 			remove_action('woocommerce_after_shop_loop', 'woocommerce_result_count', 20);
 			do_action('woocommerce_before_shop_loop');
 		?>
+			<div class="col-lg-3">
+				<?php
+				/**
+				 * Hook: woocommerce_after_shop_loop.
+				 *
+				 * @hooked woocommerce_pagination - 10
+				 */
+				do_action('woocommerce_after_shop_loop');
+
+				/**
+				 * Hook: woocommerce_sidebar.
+				 *
+				 * @hooked woocommerce_get_sidebar - 10
+				 */
+				do_action('woocommerce_sidebar');
+				?>
+			</div>
 			<div class="col-lg-9">
 				<?php
 				woocommerce_product_loop_start();
@@ -76,23 +93,10 @@ do_action('woocommerce_before_main_content');
 
 				woocommerce_product_loop_end();
 				?>
-			</div>
-			<div class="col-lg-3">
-				<?php
-				/**
-				 * Hook: woocommerce_after_shop_loop.
-				 *
-				 * @hooked woocommerce_pagination - 10
-				 */
-				do_action('woocommerce_after_shop_loop');
-
-				/**
-				 * Hook: woocommerce_sidebar.
-				 *
-				 * @hooked woocommerce_get_sidebar - 10
-				 */
-				do_action('woocommerce_sidebar');
-				?>
+				<div class="pagination">
+					<div class="nav-previous alignleft"><a href="<?php previous_posts_link('Older posts'); ?>"><i class="fa-light fa-angle-right"></i></a></div>
+					<div class="nav-next alignright"><a href="<?php next_posts_link('Newer posts'); ?>"><i class="fa-light fa-chevron-left"></i></a></div>
+				</div>
 			</div>
 		<?php
 		} else {
@@ -111,7 +115,6 @@ do_action('woocommerce_before_main_content');
 		 */
 		do_action('woocommerce_after_main_content');
 		?>
-
 	</div>
 </div>
 <?php
