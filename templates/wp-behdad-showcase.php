@@ -1,5 +1,9 @@
 <!-- Showcase -->
-<?php if (get_option("my_option_name")) : ?>
+<?php
+$option = get_option("my_option_name");
+$option_key = $option['id_number'];
+?>
+<?php if ($option_key > 0) : ?>
     <?php
     $id = get_option("my_option_name");
     $id_key = $id["id_number"];
