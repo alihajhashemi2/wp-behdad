@@ -315,6 +315,36 @@ Text Domain:
     color: var(--color-light);
 }
 
+/* Cart Slider */
+.cart-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.cart-slider-closer {
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.cart-slider-closer a {
+    color: #777;
+}
+
 @media screen and (max-width: 990px) {
     .header-navigation .container {
         display: flex;

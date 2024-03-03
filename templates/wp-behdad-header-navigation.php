@@ -33,7 +33,7 @@
                         <li><a href="#" class="header-navigation-search-icon" title="جستجو"><i class="fa-light fa-magnifying-glass"></i></a></li>
                         <li><a href="<?php echo esc_url(wp_login_url(get_permalink())); ?>" alt="<?php esc_attr_e('Login', 'textdomain'); ?>" title="حساب کاربری"><i class="fa-light fa-user"></i></a></li>
                         <li><a href="" title="پسندیده ها"><i class="fa-light fa-heart"></i></li>
-                        <li><a href="" title="سبد خرید"><i class="fa-light fa-bag-shopping"></i></a></li>
+                        <li><a href="" title="سبد خرید" class="header-navigation-cart-icon"><i class="fa-light fa-bag-shopping"></i></a></li>
                         <li class="header-navigation-navbar-icon">
                             <a href=""><i class="fa-light fa-bars"></i></a>
                         </li>
@@ -60,6 +60,15 @@
                 </form>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- Cart Slider -->
+<div class="cart-slider">
+    <div class="cart-slider-closer">
+        <a href="#">بستن</a>
+    </div>
+    <div class="car-slider-products">
     </div>
 </div>
 

@@ -10,6 +10,17 @@ jQuery(function () {
     });
 });
 
+// Cart Slider Scripts
+jQuery(function () {
+    jQuery('.header-navigation-cart-icon').on('click', function (e) {
+        e.preventDefault();
+        jQuery('.cart-slider').toggleClass('active');
+    });
+    jQuery('.cart-slider-closer').on('click', function () {
+        jQuery('.cart-slider').removeClass('active');
+    });
+});
+
 // Slider Section Scripts
 jQuery(function () {
     // Opening Silder
