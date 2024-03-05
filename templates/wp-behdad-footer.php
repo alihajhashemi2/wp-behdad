@@ -57,7 +57,7 @@
         <div class="container">
             <!-- Description -->
             <div class="footer-copyright-des">
-                © کلیه حقوق مطعلق به ایران تم می باشد ۱۴۰۲
+                © کلیه حقوق محفوظ است ۱۴۰۲
             </div>
             <!-- Icons -->
             <div class="footer-copyright-icons">

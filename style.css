@@ -626,21 +626,22 @@ Text Domain:
     padding-bottom: 2rem;
 }
 
+#sidebar::before {
+    display: block;
+    content: "فیلتر بر اساس دسته بندی:";
+    font-size: 1.2rem;
+}
+
 .product {
     text-align: center;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .wp-block-heading {
     font-size: 1.2rem;
 }
-
-.wp-block-heading::after {
-    display: block;
-    content: '<i>';
-}
-
 
 .onsale {
     display: none !important;
@@ -684,6 +685,48 @@ Text Domain:
 
 .woocommerce-pagination .page-numbers .prev {
     font-size: 2rem;
+}
+
+.woocommerce-product-gallery__image {
+    display: flex;
+    justify-content: left;
+}
+
+.woocommerce-product-gallery {
+    width: fit-content;
+    margin-right: auto;
+}
+
+.summary {
+    position: absolute;
+    top: 10rem;
+    right: 20rem;
+}
+
+.quantity {
+    margin-bottom: 1rem;
+}
+
+.single_add_to_cart_button {
+    margin-bottom: 1rem;
+}
+
+.related {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.woocommerce-tabs {
+    text-align: right;
+    margin-top: 5rem;
+}
+
+.wc-tabs {
+    margin-bottom: 2rem;
+}
+
+.wc-tabs li {
+    margin-bottom: 1rem;
 }
 
 /* .End Store Section */
