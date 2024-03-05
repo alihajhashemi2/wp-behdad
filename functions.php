@@ -43,6 +43,19 @@ function theme_setup()
         'slider-help' => __("slider-help")
     ));
 
+    register_nav_menus(array(
+        'footer_shop' => __("footer_shop")
+    ));
+
+    register_nav_menus(array(
+        'footer_customers' => __("footer_customers")
+    ));
+
+    register_nav_menus(array(
+        'footer_contact-' => __("footer_contact")
+    ));
+
+
     add_theme_support("custom-logo");
 
     add_theme_support("woocommerce");

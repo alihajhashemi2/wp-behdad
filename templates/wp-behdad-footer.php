@@ -19,15 +19,36 @@
             </div>
             <!-- Navigation -->
             <div class="footer-navigation">
-                <?php
-                if (wp_nav_menu()) {
+                <div class="footer-navigation-shop">
+                    خرید محصولات
+                    <?php
                     wp_nav_menu(array(
-                        'theme_location'  => 'header-navigation',
+                        'theme_location'  => 'footer_shop',
                         'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
                         'container'       => 'ul',
                     ));
-                }
-                ?>
+                    ?>
+                </div>
+                <div class="footer-navigation-customers">
+                    فروشنده
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location'  => 'footer_customers',
+                        'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                        'container'       => 'ul',
+                    ));
+                    ?>
+                </div>
+                <div class="footer-navigation-contact-us">
+                    راه های ارتباطی
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location'  => 'footer_contact',
+                        'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                        'container'       => 'ul',
+                    ));
+                    ?>
+                </div>
             </div>
         </div>
     </div>
@@ -39,7 +60,14 @@
                 © کلیه حقوق مطعلق به ایران تم می باشد ۱۴۰۲
             </div>
             <!-- Icons -->
-            <div class="footer-copyright-icons"></div>
+            <div class="footer-copyright-icons">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

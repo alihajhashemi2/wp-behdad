@@ -317,7 +317,7 @@ Text Domain:
 
 /* Cart Slider */
 .cart-slider {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 25%;
@@ -595,6 +595,17 @@ Text Domain:
     display: flex;
 }
 
+.woocommerce-ordering select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.woocommerce-ordering select:hover {
+    color: rgba(48, 49, 51, .5);
+}
+
 .orderby {
     margin-right: auto;
 }
@@ -621,12 +632,15 @@ Text Domain:
     flex-direction: column;
 }
 
-.pagination {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+.wp-block-heading {
+    font-size: 1.2rem;
 }
+
+.wp-block-heading::after {
+    display: block;
+    content: '<i>';
+}
+
 
 .onsale {
     display: none !important;
@@ -652,6 +666,24 @@ Text Domain:
 
 .product .price ins {
     text-decoration: none;
+}
+
+.woocommerce-pagination .page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woocommerce-pagination .page-numbers {
+    padding: 1rem;
+}
+
+.woocommerce-pagination .page-numbers .next {
+    font-size: 2rem;
+}
+
+.woocommerce-pagination .page-numbers .prev {
+    font-size: 2rem;
 }
 
 /* .End Store Section */
@@ -736,21 +768,73 @@ Text Domain:
     justify-content: space-between;
 }
 
-.footer-navigation .menu-header-navigation-container ul {
+.footer-navigation .footer-navigation-shop {
+    padding-left: 4rem;
+}
+
+.footer-navigation .footer-navigation-shop ul {
     display: flex;
     flex-direction: column;
 }
 
-.footer-navigation .menu-header-navigation-container ul li {
+.footer-navigation .footer-navigation-shop ul li {
     margin-top: 1rem;
 }
 
-.footer-navigation .menu-header-navigation-container ul li a {
+.footer-navigation .footer-navigation-shop ul li a {
     color: #fff;
     transition: 0.2s ease-in-out;
 }
 
-.footer-navigation .menu-header-navigation-container ul li a:hover {
+.footer-navigation .footer-navigation-shop ul li a:hover {
+    color: #e82a2a;
+}
+
+.footer-navigation .footer-navigation-customers {
+    padding-left: 4rem;
+}
+
+.footer-navigation .footer-navigation-customers ul {
+    margin-top: 1rem;
+}
+
+.footer-navigation .footer-navigation-customers ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-navigation .footer-navigation-customers ul li {
+    margin-top: 1rem;
+}
+
+.footer-navigation .footer-navigation-customers ul li a {
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-navigation .footer-navigation-customers ul li a:hover {
+    color: #e82a2a;
+}
+
+.footer-navigation .footer-navigation-contact-us ul {
+    margin-top: 1rem;
+}
+
+.footer-navigation .footer-navigation-contact-us ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-navigation .footer-navigation-contact-us ul li {
+    margin-top: 1rem;
+}
+
+.footer-navigation .footer-navigation-contact-us ul li a {
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-navigation .footer-navigation-contact-us ul li a:hover {
     color: #e82a2a;
 }
 
@@ -759,6 +843,27 @@ Text Domain:
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: 1px solid #303133;
+}
+
+.footer-copyright .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright .container .footer-copyright-icons ul {
+    display: flex;
+}
+
+.footer-copyright .container .footer-copyright-icons ul li a {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-copyright .container .footer-copyright-icons ul li a:hover {
+    color: #e82a2a;
 }
 
 @media screen and (max-width: 570px) {
