@@ -68,24 +68,36 @@ do_action('woocommerce_before_main_content');
 				?>
 			</div>
 			<div class="col-lg-9">
+
 				<?php
 				woocommerce_product_loop_start();
+				?>
+				<div class="row">
+					<?php
+					if (wc_get_loop_prop('total')) {
+						while (have_posts()) {
+					?>
+							<div class="col-lg-3">
+								<?php
+								the_post();
 
-				if (wc_get_loop_prop('total')) {
-					while (have_posts()) {
-						the_post();
+								/**
+								 * Hook: woocommerce_shop_loop.
+								 */
+								do_action('woocommerce_shop_loop');
 
-						/**
-						 * Hook: woocommerce_shop_loop.
-						 */
-						do_action('woocommerce_shop_loop');
-
-						wc_get_template_part('content', 'product');
+								wc_get_template_part('content', 'product');
+								?>
+							</div>
+					<?php
+						}
 					}
-				}
-
+					?>
+				</div>
+				<?php
 				woocommerce_product_loop_end();
 				?>
+
 			</div>
 		<?php
 			/**
