@@ -626,12 +626,6 @@ Text Domain:
     padding-bottom: 2rem;
 }
 
-#sidebar::before {
-    display: block;
-    content: "فیلتر بر اساس دسته بندی:";
-    font-size: 1.2rem;
-}
-
 .product {
     text-align: center;
     display: flex;
