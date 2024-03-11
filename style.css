@@ -648,6 +648,7 @@ Text Domain:
 }
 
 .woocommerce-loop-product__title {
+    justify-content: center;
     margin-top: 1rem;
     transition: 0.2s ease-in-out;
 }
@@ -706,9 +707,13 @@ Text Domain:
     margin-bottom: 1rem;
 }
 
-.related {
+.related h2 {
     display: flex !important;
     flex-wrap: wrap;
+}
+
+.related .products {
+    display: flex;
 }
 
 .woocommerce-tabs {
@@ -717,11 +722,23 @@ Text Domain:
 }
 
 .wc-tabs {
+    display: flex;
     margin-bottom: 2rem;
 }
 
 .wc-tabs li {
     margin-bottom: 1rem;
+    transition: ease-in-out 0.3s;
+}
+
+.wc-tabs li a {
+    display: block;
+    padding: 1rem 2rem;
+}
+
+.wc-tabs li.active a {
+    color: #b4975a !important;
+    border-bottom: 1px solid #b4975a;
 }
 
 .woocommerce-cart-form {
@@ -745,6 +762,51 @@ Text Domain:
 
 .shop_table tbody td .quantity {
     margin-bottom: 0;
+}
+
+#tab-description h2 {
+    margin-bottom: 2rem;
+}
+
+.comment-respond .comment-form .comment-form-rating {
+    display: flex;
+}
+
+.comment-respond .comment-form .comment-form-rating .stars span {
+    display: block;
+}
+
+.comment-respond .comment-form .comment-form-rating .stars span a {
+    padding: 1rem;
+}
+
+.comment-respond .comment-form .comment-form-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-respond .comment-form .comment-form-comment textarea {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.comment-respond .comment-form .comment-form-comment textarea:focus {
+    border-color: #b4975a;
+    outline: none;
+}
+
+.comment-respond .comment-form .form-submit input {
+    padding: 0.5rem 2rem;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.comment-respond .comment-form .form-submit input:hover {
+    color: #333;
+    background-color: transparent;
 }
 
 /* .End Store Section */
