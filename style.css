@@ -699,6 +699,39 @@ Text Domain:
     right: 20rem;
 }
 
+.review {
+    margin-top: 2rem;
+}
+
+.avatar {
+    border-radius: 100%;
+}
+
+.comment-text {
+    margin-top: 2rem;
+}
+
+.meta {
+    margin-top: 1rem;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #b4975a;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.description p {
+    margin-bottom: 0;
+}
+
+#review_form_wrapper {
+    margin-top: 3rem;
+}
+
 .quantity {
     margin-bottom: 1rem;
 }
