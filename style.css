@@ -665,6 +665,25 @@ Text Domain:
     text-decoration: none;
 }
 
+.product-remove {
+    display: flex;
+    justify-content: right !important;
+}
+
+.product-remove a {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.product-remove a::after {
+    display: block;
+    content: "حذف از سبد خرید";
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
 .woocommerce-pagination .page-numbers {
     display: flex;
     justify-content: center;
@@ -767,6 +786,11 @@ Text Domain:
 .wc-tabs li a {
     display: block;
     padding: 1rem 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.wc-tabs li a:hover {
+    color: #b4975a;
 }
 
 .wc-tabs li.active a {
