@@ -702,6 +702,16 @@ Text Domain:
     font-size: 2rem;
 }
 
+.product {
+    display: flex;
+}
+
+
+.woocommerce-product-gallery__wrapper {
+    display: flex;
+}
+
+
 .woocommerce-product-gallery__image {
     display: flex;
     justify-content: left;
@@ -759,6 +769,18 @@ Text Domain:
     margin-bottom: 1rem;
 }
 
+.related ul li {
+    margin: 1rem;
+}
+
+.related ul li:first-child {
+    margin-right: 0 !important;
+}
+
+.related ul li:last-child {
+    margin-left: 0 !important;
+}
+
 .related h2 {
     display: flex !important;
     flex-wrap: wrap;
@@ -766,6 +788,7 @@ Text Domain:
 
 .related .products {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .woocommerce-tabs {
