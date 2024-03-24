@@ -591,7 +591,25 @@ Text Domain:
 
 /* .End Showcase Section */
 
+/* Store Section */
+/* Store main */
+.content-area {
+    margin-top: 2rem;
+}
 
+/* Store Products */
+.products {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Store product */
+.product {
+    flex-grow: 1;
+}
+
+/* .End Store Section */
 
 /* Footer Section */
 #footer {
