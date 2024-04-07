@@ -597,16 +597,44 @@ Text Domain:
     margin-top: 2rem;
 }
 
+/* Store header */
+.woocommerce-ordering {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Store Products */
 .products {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
 }
 
 /* Store product */
 .product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     flex-grow: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 300px;
+}
+
+/* Store pagination */
+.woocommerce-pagination ul.page-numbers {
+    display: flex;
+}
+
+.woocommerce-pagination ul.page-numbers li span {
+    padding: 0.75rem;
+}
+
+.woocommerce-pagination ul.page-numbers li a {
+    padding: 0.75rem;
 }
 
 /* .End Store Section */
