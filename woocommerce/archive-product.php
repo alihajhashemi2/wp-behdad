@@ -41,18 +41,27 @@ do_action('woocommerce_before_main_content');
 	do_action('woocommerce_archive_description');
 	?>
 </header>
+<?php
+/**
+ * Hook: woocommerce_before_shop_loop.
+ *
+ * @hooked woocommerce_output_all_notices - 10
+ * @hooked woocommerce_result_count - 20
+ * @hooked woocommerce_catalog_ordering - 30
+ */
+do_action('woocommerce_before_shop_loop');
+?>
+
 <div class="container">
 	<?php
 	if (woocommerce_product_loop()) {
 
 		/**
-		 * Hook: woocommerce_before_shop_loop.
+		 * Hook: woocommerce_sidebar.
 		 *
-		 * @hooked woocommerce_output_all_notices - 10
-		 * @hooked woocommerce_result_count - 20
-		 * @hooked woocommerce_catalog_ordering - 30
+		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action('woocommerce_before_shop_loop');
+		do_action('woocommerce_sidebar');
 
 		woocommerce_product_loop_start();
 
@@ -70,13 +79,6 @@ do_action('woocommerce_before_main_content');
 		}
 
 		woocommerce_product_loop_end();
-
-		/**
-		 * Hook: woocommerce_after_shop_loop.
-		 *
-		 * @hooked woocommerce_pagination - 10
-		 */
-		do_action('woocommerce_after_shop_loop');
 	} else {
 		/**
 		 * Hook: woocommerce_no_products_found.
@@ -94,11 +96,11 @@ do_action('woocommerce_before_main_content');
 	do_action('woocommerce_after_main_content');
 
 	/**
-	 * Hook: woocommerce_sidebar.
+	 * Hook: woocommerce_after_shop_loop.
 	 *
-	 * @hooked woocommerce_get_sidebar - 10
+	 * @hooked woocommerce_pagination - 10
 	 */
-	do_action('woocommerce_sidebar');
+	do_action('woocommerce_after_shop_loop');
 
 	get_footer('shop');
 	?>
